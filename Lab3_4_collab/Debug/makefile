@@ -66,8 +66,8 @@ all: main-build
 main-build: Lab3_4_collab.elf secondary-outputs
 
 # Tool invocations
-Lab3_4_collab.elf Lab3_4_collab.map: $(OBJS) $(USER_OBJS) C:\Users\Lenovo\STM32CubeIDE\STM32CubeIDE\workspace_1.7.0\Lab3_4_collab\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Lab3_4_collab.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Lenovo\STM32CubeIDE\STM32CubeIDE\workspace_1.7.0\Lab3_4_collab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3_4_collab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Lab3_4_collab.elf Lab3_4_collab.map: $(OBJS) $(USER_OBJS) C:\Users\Lenovo\Desktop\github\Lab4_Vxl\Lab4\Lab3_4_collab\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Lab3_4_collab.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Lenovo\Desktop\github\Lab4_Vxl\Lab4\Lab3_4_collab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3_4_collab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

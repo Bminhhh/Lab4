@@ -66,21 +66,18 @@ static void MX_TIM3_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 							//Todo 1
-//void Toggle1(){
-//	HAL_GPIO_TogglePin(RED1_GPIO_Port, RED1_Pin);
-//}
-//
-//							//tODO 2
-//void Toggle2(){
-//	HAL_GPIO_TogglePin(RED2_GPIO_Port, RED2_Pin);
-//}
-//
-//void Toggle3(){
-//	HAL_GPIO_TogglePin(GREEN1_GPIO_Port, GREEN1_Pin);
-//}
-//void (*ptr)() = Toggle;
+void Toggle1(){
+	HAL_GPIO_TogglePin(RED1_GPIO_Port, RED1_Pin);
+}
 
-/* USER CODE END 0 */
+							//tODO 2
+void Toggle2(){
+	HAL_GPIO_TogglePin(RED2_GPIO_Port, RED2_Pin);
+}
+
+void Toggle3(){
+	HAL_GPIO_TogglePin(GREEN1_GPIO_Port, GREEN1_Pin);
+}
 
 /**
   * @brief  The application entry point.
@@ -100,11 +97,10 @@ int main(void)
   // Initialize a schedule
   		 SCH_Init() ;
   	//Add a task to repeatedly call in every 1 second .
-  		 OFF_ALL_LED1();
-  		 OFF_ALL_LED2();
-//  		 SCH_Add_Task(Toggle1, 100 , 100) ;
-//  		 SCH_Add_Task(Toggle2, 300 , 100) ;
-//  		 SCH_Add_Task(Toggle3, 200, 100);
+
+  		 SCH_Add_Task(Toggle1, 100 , 100) ;
+  		 SCH_Add_Task(Toggle2, 300 , 100) ;
+  		 SCH_Add_Task(Toggle3, 200, 100);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -126,31 +122,16 @@ HAL_TIM_Base_Start_IT(&htim3);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-start_SEG7();
 
-//void Toggle(){
-//	HAL_GPIO_TogglePin(RED1_GPIO_Port, RED1_Pin);
-//}
-//
-//void (*ptr)();
-//ptr = Toggle;
-//OFF_ALL_LED1();
 //OFF_ALL_LED2();
   while (1)
   {
-//	  HAL_GPIO_TogglePin(RED1_GPIO_Port, RED1_Pin);
-//	  HAL_Delay(100);
-////	  SCH_Dispatch_Tasks();
-//	  (*ptr)();
-//	  Toggle();
-//	  HAL_Delay(1000);
+//
 
 
-//	  to_do_7SEG();
-	  fsm_Suy_Exercise();
 
 //Dispatcher function INIT
-//	  SCH_Dispatch_Tasks();
+	  SCH_Dispatch_Tasks();
 
     /* USER CODE END WHILE */
 
@@ -337,13 +318,8 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim2){
-	timerRun();
-//	timerRun_7seg();
-//	getKeyInput();
-	get_key_Input();
-	get_key_Input2();
-	get_key_Input3();
-//	SCH_Update();
+
+	SCH_Update();
 }
 /* USER CODE END 4 */
 
