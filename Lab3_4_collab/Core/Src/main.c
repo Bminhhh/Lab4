@@ -72,7 +72,7 @@ void Toggle1(){
 
 							//tODO 2
 void Toggle2(){
-	HAL_GPIO_TogglePin(RED2_GPIO_Port, RED2_Pin);
+	HAL_GPIO_TogglePin(PURPLE1_GPIO_Port, PURPLE1_Pin);
 }
 
 void Toggle3(){
@@ -95,12 +95,12 @@ int main(void)
 
   /* USER CODE BEGIN Init */
   // Initialize a schedule
-  		 SCH_Init() ;
+//  		 SCH_Init() ;
   	//Add a task to repeatedly call in every 1 second .
 
   		 SCH_Add_Task(Toggle1, 100 , 100) ;
-  		 SCH_Add_Task(Toggle2, 300 , 100) ;
-  		 SCH_Add_Task(Toggle3, 200, 100);
+  		 SCH_Add_Task(Toggle2, 200 , 0) ;
+  		 SCH_Add_Task(Toggle3, 300, 0);
   /* USER CODE END Init */
 
   /* Configure the system clock */

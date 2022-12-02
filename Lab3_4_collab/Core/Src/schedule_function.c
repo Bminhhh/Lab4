@@ -119,12 +119,12 @@ void correctOrder(sTask *TaskInput, int numOfTaskNow){
 	    int after_task_delay = 0;
 	    for(int i = 0; i < numOfTaskNow; i++){
 	    	if(i >= 1){
-	    	previous_task_delay = previous_task_delay + SCH_tasks_G[i].Delay;
+	    	previous_task_delay = previous_task_delay + SCH_tasks_G[i-1].Delay;
 	    	}else
 	    	{
 	    	previous_task_delay = 0;
 	    	}
-	    	after_task_delay = after_task_delay + SCH_tasks_G[i+1].Delay;
+	    	after_task_delay = after_task_delay + SCH_tasks_G[i].Delay;
 	    	if(SCH_tasks_G[i].pTask != 0){
 	    		if(((*TaskInput).Delay >= previous_task_delay)&&((*TaskInput).Delay <= after_task_delay))
 		{
