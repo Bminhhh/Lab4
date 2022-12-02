@@ -1,0 +1,9 @@
+../Core/Src/schedule_function.c:47:6:SCH_Update	16	static
+../Core/Src/schedule_function.c:76:6:swap_Index	48	static
+../Core/Src/schedule_function.c:84:6:sort_Task	32	static
+../Core/Src/schedule_function.c:102:6:SCH_Init	16	static
+../Core/Src/schedule_function.c:120:15:SCH_Add_Task	32	static
+../Core/Src/schedule_function.c:149:6:SCH_Dispatch_Tasks	16	static
+../Core/Src/schedule_function.c:174:15:SCH_Delete_Task	24	static
+../Core/Src/schedule_function.c:195:6:SCH_Go_To_Sleep	4	static
+../Core/Src/schedule_function.c:200:6:SCH_Report_Status	4	static

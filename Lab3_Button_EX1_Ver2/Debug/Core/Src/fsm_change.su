@@ -1,0 +1,4 @@
+../Core/Src/fsm_change.c:19:6:blink_RED	8	static
+../Core/Src/fsm_change.c:27:6:blink_YELLOW	8	static
+../Core/Src/fsm_change.c:35:6:blink_GREEN	8	static
+../Core/Src/fsm_change.c:45:6:updateClockBuffer	4	static

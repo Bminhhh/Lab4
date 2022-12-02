@@ -1,0 +1,14 @@
+../Core/Src/seg7_display.c:28:6:zero	8	static
+../Core/Src/seg7_display.c:41:6:one	8	static
+../Core/Src/seg7_display.c:53:6:two	8	static
+../Core/Src/seg7_display.c:65:6:three	8	static
+../Core/Src/seg7_display.c:77:6:four	8	static
+../Core/Src/seg7_display.c:90:6:five	8	static
+../Core/Src/seg7_display.c:102:6:six	8	static
+../Core/Src/seg7_display.c:114:6:seven	8	static
+../Core/Src/seg7_display.c:127:6:eight	8	static
+../Core/Src/seg7_display.c:139:6:nine	8	static
+../Core/Src/seg7_display.c:153:6:display7SEG1	16	static
+../Core/Src/seg7_display.c:194:6:turnLEDOFF	8	static
+../Core/Src/seg7_display.c:206:6:SEG7_NORMAL_MODE	16	static
+../Core/Src/seg7_display.c:274:6:to_do_7SEG	8	static
