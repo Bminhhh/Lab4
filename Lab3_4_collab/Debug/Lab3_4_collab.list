@@ -150,14 +150,14 @@ int main(void)
  8000196:	2164      	movs	r1, #100	; 0x64
  8000198:	480f      	ldr	r0, [pc, #60]	; (80001d8 <main+0x4c>)
  800019a:	f000 faeb 	bl	8000774 <SCH_Add_Task>
-  		 SCH_Add_Task(Toggle2, 200 , 0) ;
+  		 SCH_Add_Task(Toggle2, 500 , 0) ;
  800019e:	2200      	movs	r2, #0
- 80001a0:	21c8      	movs	r1, #200	; 0xc8
- 80001a2:	480e      	ldr	r0, [pc, #56]	; (80001dc <main+0x50>)
- 80001a4:	f000 fae6 	bl	8000774 <SCH_Add_Task>
-  		 SCH_Add_Task(Toggle3, 300, 0);
- 80001a8:	2200      	movs	r2, #0
- 80001aa:	f44f 7196 	mov.w	r1, #300	; 0x12c
+ 80001a0:	f44f 71fa 	mov.w	r1, #500	; 0x1f4
+ 80001a4:	480d      	ldr	r0, [pc, #52]	; (80001dc <main+0x50>)
+ 80001a6:	f000 fae5 	bl	8000774 <SCH_Add_Task>
+  		 SCH_Add_Task(Toggle3, 200, 0);
+ 80001aa:	2200      	movs	r2, #0
+ 80001ac:	21c8      	movs	r1, #200	; 0xc8
  80001ae:	480c      	ldr	r0, [pc, #48]	; (80001e0 <main+0x54>)
  80001b0:	f000 fae0 	bl	8000774 <SCH_Add_Task>
   /* USER CODE END Init */

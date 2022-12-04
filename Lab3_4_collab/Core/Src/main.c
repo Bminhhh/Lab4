@@ -99,8 +99,8 @@ int main(void)
   	//Add a task to repeatedly call in every 1 second .
 
   		 SCH_Add_Task(Toggle1, 100 , 100) ;
-  		 SCH_Add_Task(Toggle2, 200 , 0) ;
-  		 SCH_Add_Task(Toggle3, 300, 0);
+  		 SCH_Add_Task(Toggle2, 500 , 0) ;
+  		 SCH_Add_Task(Toggle3, 200, 0);
   /* USER CODE END Init */
 
   /* Configure the system clock */
